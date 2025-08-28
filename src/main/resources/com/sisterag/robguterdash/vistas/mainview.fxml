@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane prefHeight="900.0" prefWidth="650.0" stylesheets="@../estilos/Black.css" xmlns="http://javafx.com/javafx/17.0.14" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sisterag.robguterdash.controller.MainController">
+    <Pane fx:id="pnlIzq" layoutY="80.0" maxHeight="1.7976931348623157E308" prefHeight="840.0" prefWidth="200.0" styleClass="pnli" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="70.0">
+        <VBox alignment="CENTER" maxWidth="-Infinity" prefWidth="150.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml">
+            <JFXButton fx:id="btnMenu" alignment="CENTER" contentDisplay="TOP" graphicTextGap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#handleClick" prefHeight="60.0" prefWidth="140.0" styleClass="btn" text="Menu" textAlignment="CENTER">
+                <graphic>
+                    <FontIcon fx:id="aweMnu" iconLiteral="fa-bars" iconSize="12" styleClass="awes" />
+                </graphic>
+            <VBox.margin>
+               <Insets left="-15.0" top="5.0" />
+            </VBox.margin>
+            <padding>
+               <Insets top="10.0" />
+            </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnCartOpt" alignment="CENTER" contentDisplay="TOP" graphicTextGap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#handleClick" prefHeight="60.0" prefWidth="140.0" styleClass="btn" text="%btn.CAO" textAlignment="CENTER">
+                <graphic>
+                    <FontIcon fx:id="aweCrt" iconLiteral="fa-briefcase" iconSize="12" styleClass="awes" />
+                </graphic>
+            <VBox.margin>
+               <Insets left="-15.0" />
+            </VBox.margin>
+            <padding>
+               <Insets top="10.0" />
+            </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnAnaCartOpt" alignment="CENTER" contentDisplay="TOP" graphicTextGap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#handleClick" prefHeight="60.0" prefWidth="140.0" styleClass="btn" text="%btn.ACO" textAlignment="CENTER" wrapText="true">
+                <graphic>
+                    <FontIcon fx:id="aweAna" iconLiteral="fa-line-chart" iconSize="12" styleClass="awes" />
+                </graphic>
+            <VBox.margin>
+               <Insets left="-15.0" />
+            </VBox.margin>
+            <padding>
+               <Insets top="10.0" />
+            </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnRastrea" alignment="CENTER" contentDisplay="TOP" graphicTextGap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#handleClick" prefHeight="60.0" prefWidth="140.0" styleClass="btn" text="Rastreador" textAlignment="CENTER">
+                <graphic>
+                    <FontIcon fx:id="aweRst" iconLiteral="fa-stack-exchange" iconSize="12" styleClass="awes" />
+                </graphic>
+            <VBox.margin>
+               <Insets left="-15.0" />
+            </VBox.margin>
+            <padding>
+               <Insets top="10.0" />
+            </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnPondera" alignment="CENTER" contentDisplay="TOP" graphicTextGap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#handleClick" prefHeight="60.0" prefWidth="140.0" styleClass="btn" text="Ponderador" textAlignment="CENTER">
+                <graphic>
+                    <FontIcon fx:id="awePnd" iconLiteral="fa-calculator" iconSize="12" styleClass="awes" />
+                </graphic>
+            <VBox.margin>
+               <Insets left="-15.0" />
+            </VBox.margin>
+            <padding>
+               <Insets top="10.0" />
+            </padding>
+            </JFXButton>
+            <Separator prefWidth="200.0">
+                <VBox.margin>
+                    <Insets bottom="15.0" top="2.0" />
+                </VBox.margin>
+            </Separator>
+            <VBox fx:id="vbxBusca" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                <Label alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="etiqueta" text="Buscador" />
+                <TextField />
+                <Separator prefWidth="200.0">
+                    <VBox.margin>
+                        <Insets bottom="15.0" top="2.0" />
+                    </VBox.margin>
+                </Separator>
+            </VBox>
+            <HBox fx:id="hbxPB" prefHeight="100.0" prefWidth="200.0" spacing="5.0" VBox.vgrow="ALWAYS">
+                <children>
+                    <ProgressIndicator fx:id="pbIndi" minWidth="100.0" prefHeight="70.0" prefWidth="100.0" progress="0.0" style="-fx-background-color: rgb(200,0,200,.9);">
+                        <HBox.margin>
+                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        </HBox.margin></ProgressIndicator>
+                </children>
+                <padding>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                </padding>
+            </HBox>
+        </VBox>
+    </Pane>
+    <Pane fx:id="pnlSup" maxHeight="60.0" prefHeight="60.0" prefWidth="650.0" styleClass="pnls" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" graphicTextGap="0.0" layoutX="-7.0" layoutY="-6.0" lineSpacing="1.0" prefHeight="83.0" prefWidth="176.0" styleClass="grnd" text="Planificación Estrategia" textAlignment="CENTER" wrapText="true">
+         <graphic>
+              <FontIcon iconLiteral="fa-money" iconSize="24" styleClass="awes" />
+         </graphic></Label>
+        <Pane layoutX="1500.0" />
+    </Pane>
+    <ScrollPane  fx:id="pnlCntn" layoutX="140.0" layoutY="60.0" maxWidth="1.7976931348623157E308" prefWidth="650.0" styleClass="pnlp" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0" />
+    <HBox id="pnlTop" alignment="TOP_RIGHT" layoutX="267.0" maxHeight="60.0" prefHeight="60.0" prefWidth="1140.0" spacing="2.0" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <JFXButton alignment="CENTER_RIGHT" contentDisplay="RIGHT" graphicTextGap="5.0" maxWidth="100.0" minWidth="100.0" prefHeight="60.0" prefWidth="100.0" styleClass="btns" text="Planificador" textAlignment="CENTER">
+            <graphic>
+                <FontIcon fx:id="awePln" iconLiteral="fa-inbox" iconSize="12" styleClass="awes" />
+            </graphic>
+        </JFXButton>
+        <JFXButton alignment="CENTER" contentDisplay="TOP" graphicTextGap="5.0" maxWidth="100.0" minWidth="100.0" prefHeight="60.0" prefWidth="100.0" styleClass="btns" text="Gestor/Simulador" textAlignment="CENTER">
+            <graphic>
+                <FontIcon fx:id="aweGsi" iconLiteral="fa-cog" iconSize="12" styleClass="awes" />
+            </graphic>
+        </JFXButton>
+        <JFXButton alignment="CENTER" contentDisplay="TOP" graphicTextGap="5.0" maxWidth="100.0" minWidth="100.0" prefHeight="60.0" prefWidth="100.0" styleClass="btns" text="Conectar Brocker" textAlignment="CENTER">
+            <graphic>
+                <FontIcon fx:id="aweCnb" iconLiteral="fa-link" iconSize="12" styleClass="awes" />
+            </graphic>
+        </JFXButton>
+        <JFXButton alignment="CENTER" contentDisplay="TOP" graphicTextGap="5.0" maxWidth="100.0" minWidth="100.0" prefHeight="60.0" prefWidth="100.0" styleClass="btns" text="Comprar Guías" textAlignment="CENTER">
+            <graphic>
+                <FontIcon fx:id="aweCmg" iconLiteral="fa-credit-card" iconSize="12" styleClass="awes" />
+            </graphic>
+        </JFXButton>
+        <JFXButton alignment="CENTER" contentDisplay="TOP" graphicTextGap="5.0" maxWidth="100.0" minWidth="100.0" prefHeight="60.0" prefWidth="100.0" styleClass="btns" text="Configuración" textAlignment="CENTER">
+            <graphic>
+                <FontIcon fx:id="aweCnf" iconLiteral="fa-cogs" iconSize="12" styleClass="awes" />
+            </graphic>
+        </JFXButton>
+        <JFXButton fx:id="btnClose" alignment="CENTER_RIGHT" contentDisplay="TOP" graphicTextGap="5.0" maxHeight="-Infinity" maxWidth="100.0" minWidth="100.0" onAction="#handleClick" prefHeight="60.0" prefWidth="100.0" styleClass="btns" text="Salir" textAlignment="RIGHT">
+            <graphic>
+                <FontIcon fx:id="aweExt" iconLiteral="fa-sign-out" iconSize="12" selectionEnd="0" styleClass="awes" />
+            </graphic>
+        </JFXButton>
+    </HBox>
+</AnchorPane>

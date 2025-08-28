@@ -1,0 +1,175 @@
+{
+    "Indices": [
+      {
+        "Imagen": "sandp500big.png",
+        "EMP":    "SPX",
+        "Nombre": "Indice s&p 500",
+        "Precio": "6.465,95 USD",
+        "Varia": "+0,41%"
+      },
+      {
+        "Imagen": "nasdaq100big.png",
+        "EMP":    "NDX",
+        "Nombre": "Índice Nasdaq 100",
+        "Precio": "23.525,29 USD",
+        "Varia":  "+0,43%"
+      },
+      {
+        "Imagen": "dow30big.png",
+        "EMP":    "DJI",
+        "Nombre": "Dow Jones Industrial Average",
+        "Precio": "45.418,08 USD",
+        "Varia":  "+0,30%"
+      },
+      {
+        "Imagen": "nikkei225big.png",
+        "EMP":    "NI225",
+        "Nombre": "Índice Japan 225",
+        "Precio": "42.394,35 JPY",
+        "Varia":  "−0,97%"
+      },
+      {
+        "Imagen": "GBbig.png",
+        "EMP":    "UKX",
+        "Nombre": "FTSE 100 Index",
+        "Precio": "9.265,80 GBP",
+        "Varia":  "−0,60%"
+      },
+      {
+        "Imagen": "daxbig.png",
+        "EMP":    "DAX",
+        "Nombre": "Índice DAX",
+        "Precio": "24.152,87 EUR",
+        "Varia":  "−0,50%"
+      }
+    ],"Espanolas": [
+      {
+        "Imagen": "santanderbig.png",
+        "EMP":    "SAN",
+        "Nombre": "BANCO SANTANDER S.A.",
+        "Precio": "8,149 EUR",
+        "Varia": "−1,63%"
+      },
+      {
+        "Imagen": "telefonicabig.png",
+        "EMP":    "TEL",
+        "Nombre": "TELEFONICA,S.A.",
+        "Precio": "4,622 EUR",
+        "Varia":  "−0,04%"
+      },
+      {
+        "Imagen": "bancobilbaovizcayaargentariabig.png",
+        "EMP":    "BBVA",
+        "Nombre": "Bo Bilbao Vizcaya Argentaria",
+        "Precio": "15,845 EUR",
+        "Varia":  "−1,86%"
+      },
+      {
+        "Imagen": "iberdrolabig.png",
+        "EMP":    "IBE",
+        "Nombre": "ACCIONES IBERDROLA",
+        "Precio": "16,180 EUR",
+        "Varia":  "−1,16%"
+      },
+      {
+        "Imagen": "repsolbig.png",
+        "EMP":    "REP",
+        "Nombre": "REPSOL, S.A.",
+        "Precio": "13,895 EUR",
+        "Varia":  "−1,00%"
+      },
+      {
+        "Imagen": "amadeusbig.png",
+        "EMP":    "AMS",
+        "Nombre": "AMADEUS IT GROUP, S.A.",
+        "Precio": "71,98 EUR",
+        "Varia":  "−0,58%"
+      }
+    ],"volatiles": [
+      {
+        "Imagen": "agilecontentsabig.png",
+        "EMP":    "AGIL",
+        "Nombre": "AGILE CONTENT, S.A.",
+        "Precio": "2,14 EUR",
+        "Varia": "−2,73%"
+      },
+      {
+        "Imagen": "desarrollosespecialessistemasanclaje.png",
+        "EMP":    "DESA",
+        "Nombre": "Des. Esp. Sistemas Anclaje",
+        "Precio": "20,6 EUR",
+        "Varia":  "0,00%"
+      },
+      {
+        "Imagen": "vanadicoffeesa.png",
+        "EMP":    "VANA",
+        "Nombre": "VANADI COFFEE, S.A.",
+        "Precio": "0,371 EUR",
+        "Varia":  "−5,60%"
+      },
+      {
+        "Imagen": "libertas7.png",
+        "EMP":    "LIB",
+        "Nombre": "LIBERTAS 7",
+        "Precio": "3,80EUR",
+        "Varia":  "−4,04%"
+      },
+      {
+        "Imagen": "atryshealth.png",
+        "EMP":    "ATRY",
+        "Nombre": "ATRYS HEALTH, S.A.",
+        "Precio": "2,82 EUR",
+        "Varia":  "−2,08%"
+      },
+      {
+        "Imagen": "grupogreening.png",
+        "EMP":    "GGR",
+        "Nombre": "GREENING GROUP GLOBAL",
+        "Precio": "4,50 EUR",
+        "Varia":  "0,00%"
+      }
+    ],"Ganadores": [
+      {
+        "Imagen": "adolfodominguez.png",
+        "EMP":    "ADZ",
+        "Nombre": "ADOLFO DOMINGUEZ, S.A.",
+        "Precio": "5,40 EUR",
+        "Varia":  "+4,85%"
+      },
+      {
+        "Imagen": "enersidenergy.png",
+        "EMP":    "ENRS",
+        "Nombre": "ENERSIDE ENERGY, S.A.",
+        "Precio": "2,54 EUR",
+        "Varia":  "+3,25%"
+      },
+      {
+        "Imagen": "robotsa.png",
+        "EMP":    "RBT",
+        "Nombre": "ROBOT, S.A.",
+        "Precio": "2,74 EUR",
+        "Varia":  "+3,01%"
+      },
+      {
+        "Imagen": "vytrusbiotech.png",
+        "EMP":    "VYT",
+        "Nombre": "VYTRUS BIOTECH, S.A.",
+        "Precio": "6,05 EUR",
+        "Varia":  "+2,54%"
+      },
+      {
+        "Imagen": "solariaenergiamedioambiente.png",
+        "EMP":    "SLR",
+        "Nombre": "Solaria Energia Y Ambiente",
+        "Precio": "12,900 EUR",
+        "Varia":  "+2,46%"
+      },
+      {
+        "Imagen": "clerhpestructuras.png",
+        "EMP":    "CLR",
+        "Nombre": "CLERHP ESTRUCTURAS, S.A.",
+        "Precio": "4,62 EUR",
+        "Varia":  "+2,44%"
+      }
+    ]
+}

@@ -1,0 +1,293 @@
+* {
+    clrBase: rgba(60,100,100,.95);
+    clrBtn: rgba(0,70,70,.75);
+    clrTxtO:rgba(0,0,0,.75);
+    clrTxtM:rgba(50,50,50,.95);
+    clrTxtC:rgba(255,255,255,.75);
+    clrFondo: derive(clrBase,26.4%);
+    hvrClrBase: ladder(
+        clrBase,
+        derive(clrBase,20%) 20%,
+        derive(clrBase,30%) 35%,
+        derive(clrBase,40%) 50%
+    );
+    hvrClrBtn: ladder(
+        clrBtn,
+        derive(clrBtn,20%) 20%,
+        derive(clrBtn,30%) 35%,
+        derive(clrBtn,40%) 50%
+    );
+    clrTxtFdo: ladder(
+        clrFondo,
+        clrTxtC 45%,
+        clrTxtO 46%,
+        clrTxtO 59%,
+        clrTxtM 60%
+    );
+    clrBrdrBox: ladder(
+        clrBtn,
+        black 2%,
+        derive(clrBtn,-15%) 30%
+    );
+    /* A little darker than -fx-color and used to draw boxes around objects such
+         * as progress bars, scroll bars, scroll panes, trees, tables, and lists.
+         */
+        borde: ladder(
+            clrBtn,
+            black 20%,
+            derive(clrBtn,-15%) 30%
+        );
+    /* Used for the inside of text boxes, password boxes, lists, trees, and
+         * tables.  See also -fx-text-inner-color, which should be used as the
+         * -fx-text-fill value for text painted on top of backgrounds colored
+         * with -fx-control-inner-background.
+         */
+        ctrlBckGr: derive(-fx-base,80%);
+        /* Version of -fx-control-inner-background for alternative rows */
+        ctrlBckGr-alt: derive(ctrlBckGr,-2%);
+    /* A bright blue for highlighting/accenting objects.  For example: selected
+         * text; selected items in menus, lists, trees, and tables; progress bars */
+        acento: #0096C9;
+    /* The color to use for -fx-text-fill when text is to be painted on top of
+         * a background filled with the -fx-background color.
+         */
+        txtbckgrclr: ladder(
+            -fx-background,
+            -fx-light-text-color 45%,
+            -fx-dark-text-color  46%,
+            -fx-dark-text-color  59%,
+            -fx-mid-text-color   60%
+        );
+}
+.root{
+  -icons-color: rgb(100,180,200);
+}
+.pnlp {
+    -fx-background-color: derive(clrBase,15.4%);
+    -fx-border-width:       2px;
+    -fx-border-color:       #456;
+}
+.pnli, .vrtBx {
+    -fx-background-color: rgba(50,60,70,.85);
+    -fx-pref-width: 140px;
+    -fx-max-width: 140px;
+}
+.vrtBx {
+    -fx-background-color: transparent;
+}
+.pnls {
+    -fx-background-color: clrBase;
+    -fx-pref-height: 60px;
+    -fx-max-height: 60px;
+}
+.btn, .lbl {
+    -fx-font-family: 'Source Sans Variable', 'sans serif';
+    -fx-text-fill:  #FFF;
+    -fx-font-style: normal;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+}
+.etiqueta {
+     -fx-font-family: 'Source Sans Variable', 'Times New Roman';
+     -fx-text-fill:  #FFF;
+     -fx-font-style: normal;
+     -fx-font-size: 16px;
+ }
+.btn, .btns {
+    -fx-background-color: derive(clrBtn,25.0%);
+    -fx-text-fill: clrTxtC;
+    -fx-font-size: 130%;
+    -fx-text-align: CENTER;
+    -fx-padding: 0px 0px 0px 0px;
+    -fx-alignment:  center;
+    transition: 1.8s;
+    transition-property: color, transform;
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.7), 6, 0.0, 0, 2);
+}
+.btns {
+    -fx-pref-width:      220px;
+    -fx-max-width:       220px;
+    -fx-min-width:       220px;
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.7), 2, 0.0, 0, 1);
+}
+.btn:hover, .btn:focus,
+ .btns:hover, .btns:focus {
+    -fx-background-color:   hvrClrBtn;
+    -fx-text-fill:          clrBrdrBox;
+    -fx-font-weight:        bold;
+    -fx-border-width:       0px 0px 0px 3px;
+    -fx-border-color:       rgba(255,255,255,.5);
+    -fx-border-radius:      0px 4px 4px 0px;
+    -fx-cursor:             hand;
+    -fx-effect:             dropshadow(gaussian, rgba(255,255,255,0.5), 0,0,0,1);
+}
+.btns:hover, .btns:focus {
+    -fx-border-width:       3px 0px 0px 0px;
+}
+.btn:pressed, .btns:pressed {
+    -fx-background-color: rgba(170,190,250,.95);
+    -fx-text-fill: rgba(255,255,255,.25);
+}
+.fuenteTit, .fntTit {
+    -fx-font-family:    'Source Sans Variable', 'sans serif';
+    -fx-text-fill:      #FFF;
+    -fx-font-style:     italic;
+    -fx-font-size:      18px;
+    -fx-background-color: transparent;
+}
+.fntTit {
+    -fx-font-size:      36px;
+    -fx-font-weight:    bold;
+}
+.grnd {
+    -fx-font-family: 'Source Sans Variable', 'sans serif';
+    -fx-text-fill:  #FFF;
+    -fx-font-style: italic;
+    -fx-font-size: 24px;
+}
+.awes {
+    -fx-stroke: rgba(255,255,255,.95);
+    -fx-stroke-width: 3px;
+    -fx-stroke-type: outside;
+    -fx-fill: clrBtn;
+    -fx-font-size: 2em;
+    -fx-size: 2em;
+}
+.btn:hover .awes, .btn:focus .awes,
+.btns:hover .awes, .btns:focus .awes {
+    -fx-stroke-width: 0.2em;
+    -fx-stroke: rgba(0,40,50,1);
+    -fx-fill: rgba(255,255,255,.95);
+}
+.menuBar{
+    -fx-background-color: clrBase;
+}
+.icon-glass:before {
+    content: "\f000";
+}
+/*******************/
+/* horizontal the two nodes are placed to the left/right of each other. */
+.split-pane:horizontal > * > .split-pane-divider {
+    -fx-border-color: transparent -fx-box-border transparent #BBBBBB;
+    -fx-background-color: transparent, -fx-inner-border-horizontal;
+    -fx-background-insets: 0, 0 1 0 1;
+}
+
+/* vertical the two nodes are placed on top of each other. */
+.split-pane:vertical > * > .split-pane-divider {
+    -fx-border-color: #BBBBBB transparent -fx-box-border transparent;
+    -fx-background-color: transparent, -fx-inner-border;
+    -fx-background-insets: 0, 1 0 1 0;
+}
+/*estoy usando una vertical, por lo que overrided la vertical en mi css de la siguiente manera:*/
+.split-pane:vertical > * > .split-pane-divider {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+}
+/*Y funciona. Si desea ocultar los capturadores también (por ejemplo, no me escondo, parece agradable), creo que la siguiente regla puede hacer el truco:*/
+.split-pane *.vertical-grabber {
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-shape: " ";
+}
+
+/* Es un poco diferente en Java FX8 (estilo Modena):*/
+.split-pane *.split-pane-divider {
+    -fx-padding: 0 1 0 1;
+}
+
+/*'-fx-relleno: 1 0 1 0' para la orientación vertical +1 –*/
+
+/*Estas otras respuestas aún dejó una barra gris delgada así que en mi CSS añadí:*/
+.split-pane-divider {
+    -fx-background-color: transparent;
+}
+.ventanab{
+    -fx-background-color: derive(clrBase,50.0%); -fx-border-radius: 0;
+    -fx-background-radius: 0; -fx-border-color: #055; -fx-border-width: 1;
+}
+.boton{
+    -fx-background-color: clrBtn; -fx-border-radius: 5;
+    -fx-background-radius: 5; -fx-border-color: #FFF; -fx-border-width: 1;
+    -fx-text-fill: rgba(255,255,255,.75); -fx-alignment:  center;
+    -fx-min-width: 100px; -fx-min-height: 40px;
+}
+.boton:hover, .boton:focus {
+    -fx-background-color: rgba(200,255,255,.95); -fx-font-weight: bold; -fx-cursor: hand;
+    -fx-border-color: #055; -fx-text-fill: rgba(0,50,50,.95);
+}
+.etiquetab{
+    -fx-fill-color: rgba(0,0,0,.75);
+}
+.progress-indicator {
+    -fx-indeterminate-segment-count: 12;
+    -fx-spin-enabled: true;
+}
+.progress-indicator > .determinate-indicator > .indicator {
+    -fx-background-color: borde,
+        radial-gradient(center 50% 50%, radius 50%, ctrlBckGr 70%, derive(ctrlBckGr, -9%) 100%),
+        ctrlBckGr;
+    -fx-background-insets: 0, 1, 5 2 1 2;
+    -fx-padding: 0.166667em; /* 2px */
+}
+.progress-indicator > .determinate-indicator > .progress {
+    -fx-background-color: acento;
+    -fx-padding: 0.083333em; /* 1px */
+}
+.progress-indicator > .determinate-indicator > .tick {
+    -fx-background-color: white;
+    -fx-background-insets: 0;
+    -fx-padding: 0.666667em; /* 8 */
+    -fx-shape: "M-0.25,6.083c0.843-0.758,4.583,4.833,5.75,4.833S14.5-1.5,15.917-0.917c1.292,0.532-8.75,17.083-10.5,17.083C3,16.167-1.083,6.833-0.25,6.083z";
+}
+.progress-indicator > .percentage {
+    -fx-font-size: 0.916667em; /* 11pt - 1 less than the default font */
+    -fx-fill: txtbckgrclr;
+}
+.progress-indicator:indeterminate > .spinner {
+    /** Applying to undo styling from .spinner, reported in RT-37965 */
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+.progress-indicator:indeterminate .segment {
+    -fx-background-color: acento;
+}
+.progress-indicator:indeterminate .segment0 {
+    -fx-shape:"M41.98 14.74 a3.5,3.5 0 1,1 0,1 Z";
+}
+.progress-indicator:indeterminate .segment1 {
+    -fx-shape:"M33.75 6.51 a3.5,3.5 0 1,1 0,1 Z";
+}
+.progress-indicator:indeterminate .segment2 {
+    -fx-shape:"M22.49 3.5 a3.5,3.5 0 1,1 0,1 Z";
+}
+.progress-indicator:indeterminate .segment3 {
+    -fx-shape:"M11.24 6.51 a3.5,3.5 0 1,1 0,1 Z";
+}
+.progress-indicator:indeterminate .segment4 {
+    -fx-shape:"M3.01 14.74 a3.5,3.5 0 1,1 0,1 Z";
+}
+.progress-indicator:indeterminate .segment5 {
+    -fx-shape:"M0.0 26.0 a3.5,3.5 0 1,1 0,1 Z";
+}
+.progress-indicator:indeterminate .segment6 {
+    -fx-shape:"M3.01 37.25 a3.5,3.5 0 1,1 0,1 Z";
+}
+.progress-indicator:indeterminate .segment7 {
+    -fx-shape:"M11.25 45.48 a3.5,3.5 0 1,1 0,1 Z";
+}
+.progress-indicator:indeterminate .segment8 {
+    -fx-shape:"M22.5 48.5 a3.5,3.5 0 1,1 0,1 Z";
+}
+.progress-indicator:indeterminate .segment9 {
+    -fx-shape:"M33.75 45.48 a3.5,3.5 0 1,1 0,1 Z";
+}
+.progress-indicator:indeterminate .segment10 {
+    -fx-shape:"M41.98 37.25 a3.5,3.5 0 1,1 0,1 Z";
+}
+.progress-indicator:indeterminate .segment11 {
+     -fx-shape:"M45.0 26.0 a3.5,3.5 0 1,1 0,1 Z";
+}

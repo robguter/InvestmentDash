@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefWidth="930.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sisterag.robguterdash.controller.InicioController">
+
+    <AnchorPane styleClass="Amplio" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <Text fill="WHITE" styleClass="titleAP" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="0.0">Índices mundiales</Text>
+        <HBox styleClass="Amplio" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+            <Pane fx:id="pnlInd" prefHeight="100.0" prefWidth="150.0" styleClass="card">
+                <VBox>
+                    <HBox spacing="5.0" styleClass="frsHBox" VBox.vgrow="ALWAYS">
+                        <ImageView fx:id="imgSPX" fitHeight="38.0" fitWidth="35.0">
+                             <HBox.margin>
+                                <Insets left="5.0" top="7.0" />
+                             </HBox.margin></ImageView>
+                        <Text fx:id="txtSPXEmp" styleClass="txtcard" text="Titulo" wrappingWidth="169.0">
+                             <HBox.margin>
+                                <Insets top="15.0" />
+                             </HBox.margin></Text>
+                    </HBox>
+                    <Text fx:id="txtSPXNom" styleClass="txtcard" text="Titulo" textAlignment="CENTER" wrappingWidth="239.0">
+                        <VBox.margin>
+                            <Insets left="5.0" top="10.0" />
+                        </VBox.margin></Text>
+                    <HBox maxWidth="240.0" prefWidth="240.0" spacing="5.0" styleClass="lstHBox" VBox.vgrow="ALWAYS">
+                        <Text fx:id="txtSPXPrc" styleClass="txtMon" text="1500" wrappingWidth="98.0">
+                         <HBox.margin>
+                            <Insets left="15.0" />
+                         </HBox.margin></Text>
+                            <Text fx:id="txtSPXVar" styleClass="txtMon" text="1500" wrappingWidth="90.0">
+                         <HBox.margin>
+                            <Insets left="25.0" />
+                         </HBox.margin></Text>
+                          <VBox.margin>
+                             <Insets left="5.0" top="40.0" />
+                          </VBox.margin>
+                    </HBox>
+                </VBox>
+            </Pane>
+            <Pane fx:id="pnlNDX" prefHeight="100.0" prefWidth="150.0" styleClass="card">
+                <VBox>
+                    <HBox spacing="5.0" styleClass="frsHBox" VBox.vgrow="ALWAYS">
+                        <ImageView fx:id="imgNDX" fitHeight="38.0" fitWidth="35.0">
+                            <HBox.margin>
+                                <Insets left="5.0" top="7.0" />
+                            </HBox.margin></ImageView>
+                        <Text fx:id="txtNDXEmp" styleClass="txtcard" text="Titulo" wrappingWidth="169.0">
+                            <HBox.margin>
+                                <Insets top="15.0" />
+                            </HBox.margin></Text>
+                    </HBox>
+                    <Text fx:id="txtNDXNom" styleClass="txtcard" text="Titulo" textAlignment="CENTER" wrappingWidth="239.0">
+                        <VBox.margin>
+                            <Insets left="5.0" top="10.0" />
+                        </VBox.margin></Text>
+                    <HBox spacing="5.0" styleClass="lstHBox" VBox.vgrow="ALWAYS">
+                        <Text fx:id="txtNDXPrc" styleClass="txtMon" text="1500" wrappingWidth="98.0">
+                         <HBox.margin>
+                            <Insets left="15.0" />
+                         </HBox.margin></Text>
+                            <Text fx:id="txtNDXVar" styleClass="txtMon" text="1500" wrappingWidth="90.0">
+                         <HBox.margin>
+                            <Insets left="25.0" />
+                         </HBox.margin></Text>
+                        <VBox.margin>
+                            <Insets left="5.0" top="40.0" />
+                        </VBox.margin>
+                    </HBox>
+                </VBox>
+            </Pane>
+            <Pane fx:id="pnlDJI" prefHeight="100.0" prefWidth="150.0" styleClass="card">
+                <VBox>
+                    <HBox spacing="5.0" styleClass="frsHBox" VBox.vgrow="ALWAYS">
+                        <ImageView fx:id="imgDJI" fitHeight="38.0" fitWidth="35.0">
+                            <HBox.margin>
+                                <Insets left="5.0" top="7.0" />
+                            </HBox.margin></ImageView>
+                        <Text fx:id="txtDJIEmp" styleClass="txtcard" text="Titulo" wrappingWidth="169.0">
+                            <HBox.margin>
+                                <Insets top="15.0" />
+                            </HBox.margin></Text>
+                    </HBox>
+                    <Text fx:id="txtDJINom" styleClass="txtcard" text="Titulo" textAlignment="CENTER" wrappingWidth="239.0">
+                        <VBox.margin>
+                            <Insets left="5.0" top="10.0" />
+                        </VBox.margin></Text>
+                    <HBox maxWidth="240.0" prefWidth="240.0" spacing="5.0" styleClass="lstHBox" VBox.vgrow="ALWAYS">
+                        <Text fx:id="txtDJIPrc" styleClass="txtMon" text="1500" wrappingWidth="98.0">
+                            <HBox.margin>
+                                <Insets left="15.0" />
+                            </HBox.margin></Text>
+                        <Text fx:id="txtDJIVar" styleClass="txtMon" text="1500" wrappingWidth="90.0">
+                            <HBox.margin>
+                                <Insets left="25.0" />
+                            </HBox.margin></Text>
+                        <VBox.margin>
+                            <Insets left="5.0" top="40.0" />
+                        </VBox.margin>
+                    </HBox>
+                </VBox>
+            </Pane>
+        </HBox>
+        <HBox styleClass="Amplio" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="200.0">
+            <Pane fx:id="pnlNI225" prefHeight="100.0" prefWidth="150.0" styleClass="card">
+                <VBox>
+                    <HBox spacing="5.0" styleClass="frsHBox" VBox.vgrow="ALWAYS">
+                        <ImageView fx:id="imgNI225" fitHeight="38.0" fitWidth="35.0">
+                            <HBox.margin>
+                                <Insets left="5.0" top="7.0" />
+                            </HBox.margin></ImageView>
+                        <Text fx:id="txtNI225Emp" styleClass="txtcard" text="Titulo" wrappingWidth="169.0">
+                            <HBox.margin>
+                                <Insets top="15.0" />
+                            </HBox.margin></Text>
+                    </HBox>
+                    <Text fx:id="txtNI225Nom" styleClass="txtcard" text="Titulo" textAlignment="CENTER" wrappingWidth="239.0">
+                        <VBox.margin>
+                            <Insets left="5.0" top="10.0" />
+                        </VBox.margin></Text>
+                    <HBox spacing="5.0" styleClass="lstHBox" VBox.vgrow="ALWAYS">
+                        <Text fx:id="txtNI225Prc" styleClass="txtMon" text="1500" wrappingWidth="98.0">
+                            <HBox.margin>
+                                <Insets left="15.0" />
+                            </HBox.margin></Text>
+                        <Text fx:id="txtNI225Var" styleClass="txtMon" text="1500" wrappingWidth="90.0">
+                            <HBox.margin>
+                                <Insets left="25.0" />
+                            </HBox.margin></Text>
+                        <VBox.margin>
+                            <Insets left="5.0" top="40.0" />
+                        </VBox.margin>
+                    </HBox>
+                </VBox>
+            </Pane>
+            <Pane fx:id="pnlUKX" prefHeight="100.0" prefWidth="150.0" styleClass="card">
+                <VBox>
+                    <HBox spacing="5.0" styleClass="frsHBox" VBox.vgrow="ALWAYS">
+                        <ImageView fx:id="imgUKX" fitHeight="38.0" fitWidth="35.0">
+                            <HBox.margin>
+                                <Insets left="5.0" top="7.0" />
+                            </HBox.margin></ImageView>
+                        <Text fx:id="txtUKXEmp" styleClass="txtcard" text="Titulo" wrappingWidth="169.0">
+                            <HBox.margin>
+                                <Insets top="15.0" />
+                            </HBox.margin></Text>
+                    </HBox>
+                    <Text fx:id="txtUKXNom" styleClass="txtcard" text="Titulo" textAlignment="CENTER" wrappingWidth="239.0">
+                        <VBox.margin>
+                            <Insets left="5.0" top="10.0" />
+                        </VBox.margin></Text>
+                    <HBox spacing="5.0" styleClass="lstHBox" VBox.vgrow="ALWAYS">
+                        <Text fx:id="txtUKXPrc" styleClass="txtMon" text="1500" wrappingWidth="98.0">
+                            <HBox.margin>
+                                <Insets left="15.0" />
+                            </HBox.margin></Text>
+                        <Text fx:id="txtUKXVar" styleClass="txtMon" text="1500" wrappingWidth="90.0">
+                            <HBox.margin>
+                                <Insets left="25.0" />
+                            </HBox.margin></Text>
+                        <VBox.margin>
+                            <Insets left="5.0" top="40.0" />
+                        </VBox.margin>
+                    </HBox>
+                </VBox>
+            </Pane>
+            <Pane fx:id="pnlDAX" prefHeight="100.0" prefWidth="150.0" styleClass="card">
+                <VBox>
+                    <HBox spacing="5.0" styleClass="frsHBox" VBox.vgrow="ALWAYS">
+                        <ImageView fx:id="imgDAX" fitHeight="38.0" fitWidth="35.0">
+                            <HBox.margin>
+                                <Insets left="5.0" top="7.0" />
+                            </HBox.margin></ImageView>
+                        <Text fx:id="txtDAXEmp" styleClass="txtcard" text="Titulo" wrappingWidth="169.0">
+                            <HBox.margin>
+                                <Insets top="15.0" />
+                            </HBox.margin></Text>
+                    </HBox>
+                    <Text fx:id="txtDAXNom" styleClass="txtcard" text="Titulo" textAlignment="CENTER" wrappingWidth="239.0">
+                        <VBox.margin>
+                            <Insets left="5.0" top="10.0" />
+                        </VBox.margin></Text>
+                    <HBox spacing="5.0" styleClass="lstHBox" VBox.vgrow="ALWAYS">
+                        <Text fx:id="txtDAXPrc" styleClass="txtMon" text="1500" wrappingWidth="98.0">
+                            <HBox.margin>
+                                <Insets left="15.0" />
+                            </HBox.margin></Text>
+                        <Text fx:id="txtDAXVar" styleClass="txtMon" text="1500" wrappingWidth="90.0">
+                            <HBox.margin>
+                                <Insets left="25.0" />
+                            </HBox.margin></Text>
+                        <VBox.margin>
+                            <Insets left="5.0" top="40.0" />
+                        </VBox.margin>
+                    </HBox>
+                </VBox>
+            </Pane>
+        </HBox>
+    </AnchorPane>
+
+    <AnchorPane styleClass="Amplio" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="400.0">
+        <Text fill="WHITE" styleClass="titleAP" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="0.0">Acciones españolas</Text>
+        <HBox styleClass="Amplio" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+            <Pane fx:id="pnlEsp" prefHeight="100.0" prefWidth="150.0" styleClass="card">
+                <VBox>
+                    <HBox spacing="5.0" styleClass="frsHBox" VBox.vgrow="ALWAYS">
+                        <ImageView fx:id="imgSAN" fitHeight="38.0" fitWidth="35.0">
+                            <HBox.margin>
+                                <Insets left="5.0" top="7.0" />
+                            </HBox.margin></ImageView>
+                        <Text fx:id="txtSANEmp" styleClass="txtcard" text="Titulo" wrappingWidth="169.0">
+                            <HBox.margin>
+                                <Insets top="15.0" />
+                            </HBox.margin></Text>
+                    </HBox>
+                    <Text fx:id="txtSANNom" styleClass="txtcard" text="Titulo" textAlignment="CENTER" wrappingWidth="239.0">
+                        <VBox.margin>
+                            <Insets left="5.0" top="10.0" />
+                        </VBox.margin></Text>
+                    <HBox spacing="5.0" styleClass="lstHBox" VBox.vgrow="ALWAYS">
+                        <Text fx:id="txtSANPrc" styleClass="txtMon" text="1500" wrappingWidth="98.0">
+                            <HBox.margin>
+                                <Insets left="15.0" />
+                            </HBox.margin></Text>
+                        <Text fx:id="txtSANVar" styleClass="txtMon" text="1500" wrappingWidth="90.0">
+                            <HBox.margin>
+                                <Insets left="25.0" />
+                            </HBox.margin></Text>
+                        <VBox.margin>
+                            <Insets left="5.0" top="40.0" />
+                        </VBox.margin>
+                    </HBox>
+                </VBox>
+            </Pane>
+            <Pane fx:id="pnlTEL" prefHeight="100.0" prefWidth="150.0" styleClass="card">
+                <VBox>
+                    <HBox spacing="5.0" styleClass="frsHBox" VBox.vgrow="ALWAYS">
+                        <ImageView fx:id="imgTEL" fitHeight="38.0" fitWidth="35.0">
+                            <HBox.margin>
+                                <Insets left="5.0" top="7.0" />
+                            </HBox.margin></ImageView>
+                        <Text fx:id="txtTELEmp" styleClass="txtcard" text="Titulo" wrappingWidth="169.0">
+                            <HBox.margin>
+                                <Insets top="15.0" />
+                            </HBox.margin></Text>
+                    </HBox>
+                    <Text fx:id="txtTELNom" styleClass="txtcard" text="Titulo" textAlignment="CENTER" wrappingWidth="239.0">
+                        <VBox.margin>
+                            <Insets left="5.0" top="10.0" />
+                        </VBox.margin></Text>
+                    <HBox spacing="5.0" styleClass="lstHBox" VBox.vgrow="ALWAYS">
+                        <Text fx:id="txtTELPrc" styleClass="txtMon" text="1500" wrappingWidth="98.0">
+                            <HBox.margin>
+                                <Insets left="15.0" />
+                            </HBox.margin></Text>
+                        <Text fx:id="txtTELVar" styleClass="txtMon" text="1500" wrappingWidth="90.0">
+                            <HBox.margin>
+                                <Insets left="25.0" />
+                            </HBox.margin></Text>
+                        <VBox.margin>
+                            <Insets left="5.0" top="40.0" />
+                        </VBox.margin>
+                    </HBox>
+                </VBox>
+            </Pane>
+            <Pane fx:id="pnlBBVA" prefHeight="100.0" prefWidth="150.0" styleClass="card">
+                <VBox>
+                    <HBox spacing="5.0" styleClass="frsHBox" VBox.vgrow="ALWAYS">
+                        <ImageView fx:id="imgBBVA" fitHeight="38.0" fitWidth="35.0">
+                            <HBox.margin>
+                                <Insets left="5.0" top="7.0" />
+                            </HBox.margin></ImageView>
+                        <Text fx:id="txtBBVAEmp" styleClass="txtcard" text="Titulo" wrappingWidth="169.0">
+                            <HBox.margin>
+                                <Insets top="15.0" />
+                            </HBox.margin></Text>
+                    </HBox>
+                    <Text fx:id="txtBBVANom" styleClass="txtcard" text="Titulo" textAlignment="CENTER" wrappingWidth="239.0">
+                        <VBox.margin>
+                            <Insets left="5.0" top="10.0" />
+                        </VBox.margin></Text>
+                    <HBox spacing="5.0" styleClass="lstHBox" VBox.vgrow="ALWAYS">
+                        <Text fx:id="txtBBVAPrc" styleClass="txtMon" text="1500" wrappingWidth="98.0">
+                            <HBox.margin>
+                                <Insets left="15.0" />
+                            </HBox.margin></Text>
+                        <Text fx:id="txtBBVAVar" styleClass="txtMon" text="1500" wrappingWidth="90.0">
+                            <HBox.margin>
+                                <Insets left="25.0" />
+                            </HBox.margin></Text>
+                        <VBox.margin>
+                            <Insets left="5.0" top="40.0" />
+                        </VBox.margin>
+                    </HBox>
+                </VBox>
+            </Pane>
+        </HBox>
+        <HBox styleClass="Amplio" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="200.0">
+            <Pane fx:id="pnlIBE" prefHeight="100.0" prefWidth="150.0" styleClass="card">
+                <VBox>
+                    <HBox spacing="5.0" styleClass="frsHBox" VBox.vgrow="ALWAYS">
+                        <ImageView fx:id="imgIBE" fitHeight="38.0" fitWidth="35.0">
+                            <HBox.margin>
+                                <Insets left="5.0" top="7.0" />
+                            </HBox.margin></ImageView>
+                        <Text fx:id="txtIBEEmp" styleClass="txtcard" text="Titulo" wrappingWidth="169.0">
+                            <HBox.margin>
+                                <Insets top="15.0" />
+                            </HBox.margin></Text>
+                    </HBox>
+                    <Text fx:id="txtIBENom" styleClass="txtcard" text="Titulo" textAlignment="CENTER" wrappingWidth="239.0">
+                        <VBox.margin>
+                            <Insets left="5.0" top="10.0" />
+                        </VBox.margin></Text>
+                    <HBox spacing="5.0" styleClass="lstHBox" VBox.vgrow="ALWAYS">
+                        <Text fx:id="txtIBEPrc" styleClass="txtMon" text="1500" wrappingWidth="98.0">
+                            <HBox.margin>
+                                <Insets left="15.0" />
+                            </HBox.margin></Text>
+                        <Text fx:id="txtIBEVar" styleClass="txtMon" text="1500" wrappingWidth="90.0">
+                            <HBox.margin>
+                                <Insets left="25.0" />
+                            </HBox.margin></Text>
+                        <VBox.margin>
+                            <Insets left="5.0" top="40.0" />
+                        </VBox.margin>
+                    </HBox>
+                </VBox>
+            </Pane>
+            <Pane fx:id="pnlREP" prefHeight="100.0" prefWidth="150.0" styleClass="card">
+                <VBox>
+                    <HBox spacing="5.0" styleClass="frsHBox" VBox.vgrow="ALWAYS">
+                        <ImageView fx:id="imgREP" fitHeight="38.0" fitWidth="35.0">
+                            <HBox.margin>
+                                <Insets left="5.0" top="7.0" />
+                            </HBox.margin></ImageView>
+                        <Text fx:id="txtREPEmp" styleClass="txtcard" text="Titulo" wrappingWidth="169.0">
+                            <HBox.margin>
+                                <Insets top="15.0" />
+                            </HBox.margin></Text>
+                    </HBox>
+                    <Text fx:id="txtREPNom" styleClass="txtcard" text="Titulo" textAlignment="CENTER" wrappingWidth="239.0">
+                        <VBox.margin>
+                            <Insets left="5.0" top="10.0" />
+                        </VBox.margin></Text>
+                    <HBox spacing="5.0" styleClass="lstHBox" VBox.vgrow="ALWAYS">
+                        <Text fx:id="txtREPPrc" styleClass="txtMon" text="1500" wrappingWidth="98.0">
+                            <HBox.margin>
+                                <Insets left="15.0" />
+                            </HBox.margin></Text>
+                        <Text fx:id="txtREPVar" styleClass="txtMon" text="1500" wrappingWidth="90.0">
+                            <HBox.margin>
+                                <Insets left="25.0" />
+                            </HBox.margin></Text>
+                        <VBox.margin>
+                            <Insets left="5.0" top="40.0" />
+                        </VBox.margin>
+                    </HBox>
+                </VBox>
+            </Pane>
+            <Pane fx:id="pnlAMS" prefHeight="100.0" prefWidth="150.0" styleClass="card">
+                <VBox>
+                    <HBox spacing="5.0" styleClass="frsHBox" VBox.vgrow="ALWAYS">
+                        <ImageView fx:id="imgAMS" fitHeight="38.0" fitWidth="35.0">
+                            <HBox.margin>
+                                <Insets left="5.0" top="7.0" />
+                            </HBox.margin></ImageView>
+                        <Text fx:id="txtAMSEmp" styleClass="txtcard" text="Titulo" wrappingWidth="169.0">
+                            <HBox.margin>
+                                <Insets top="15.0" />
+                            </HBox.margin></Text>
+                    </HBox>
+                    <Text fx:id="txtAMSNom" styleClass="txtcard" text="Titulo" textAlignment="CENTER" wrappingWidth="239.0">
+                        <VBox.margin>
+                            <Insets left="5.0" top="10.0" />
+                        </VBox.margin></Text>
+                    <HBox spacing="5.0" styleClass="lstHBox" VBox.vgrow="ALWAYS">
+                        <Text fx:id="txtAMSPrc" styleClass="txtMon" text="1500" wrappingWidth="98.0">
+                            <HBox.margin>
+                                <Insets left="15.0" />
+                            </HBox.margin></Text>
+                        <Text fx:id="txtAMSVar" styleClass="txtMon" text="1500" wrappingWidth="90.0">
+                            <HBox.margin>
+                                <Insets left="25.0" />
+                            </HBox.margin></Text>
+                        <VBox.margin>
+                            <Insets left="5.0" top="40.0" />
+                        </VBox.margin>
+                    </HBox>
+                </VBox>
+            </Pane>
+        </HBox>
+    </AnchorPane>
+
+    <AnchorPane styleClass="Amplio" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="800.0">
+        <Text fill="WHITE" styleClass="titleAP" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="0.0">Acciones mas Volátiles</Text>
+        <HBox styleClass="Amplio" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+            <Pane fx:id="pnlVol" prefHeight="100.0" prefWidth="150.0" styleClass="card">
+                <VBox>
+                    <HBox spacing="5.0" styleClass="frsHBox" VBox.vgrow="ALWAYS">
+                        <ImageView fx:id="imgAGIL" fitHeight="38.0" fitWidth="35.0">
+                            <HBox.margin>
+                                <Insets left="5.0" top="7.0" />
+                            </HBox.margin></ImageView>
+                        <Text fx:id="txtAGILEmp" styleClass="txtcard" text="Titulo" wrappingWidth="169.0">
+                            <HBox.margin>
+                                <Insets top="15.0" />
+                            </HBox.margin></Text>
+                    </HBox>
+                    <Text fx:id="txtAGILNom" styleClass="txtcard" text="Titulo" textAlignment="CENTER" wrappingWidth="239.0">
+                        <VBox.margin>
+                            <Insets left="5.0" top="10.0" />
+                        </VBox.margin></Text>
+                    <HBox spacing="5.0" styleClass="lstHBox" VBox.vgrow="ALWAYS">
+                        <Text fx:id="txtAGILPrc" styleClass="txtMon" text="1500" wrappingWidth="98.0">
+                            <HBox.margin>
+                                <Insets left="15.0" />
+                            </HBox.margin></Text>
+                        <Text fx:id="txtAGILVar" styleClass="txtMon" text="1500" wrappingWidth="90.0">
+                            <HBox.margin>
+                                <Insets left="25.0" />
+                            </HBox.margin></Text>
+                        <VBox.margin>
+                            <Insets left="5.0" top="40.0" />
+                        </VBox.margin>
+                    </HBox>
+                </VBox>
+            </Pane>
+            <Pane fx:id="pnlDESA" prefHeight="100.0" prefWidth="150.0" styleClass="card">
+                <VBox>
+                    <HBox spacing="5.0" styleClass="frsHBox" VBox.vgrow="ALWAYS">
+                        <ImageView fx:id="imgDESA" fitHeight="38.0" fitWidth="35.0">
+                            <HBox.margin>
+                                <Insets left="5.0" top="7.0" />
+                            </HBox.margin></ImageView>
+                        <Text fx:id="txtDESAEmp" styleClass="txtcard" text="Titulo" wrappingWidth="169.0">
+                            <HBox.margin>
+                                <Insets top="15.0" />
+                            </HBox.margin></Text>
+                    </HBox>
+                    <Text fx:id="txtDESANom" styleClass="txtcard" text="Titulo" textAlignment="CENTER" wrappingWidth="239.0">
+                        <VBox.margin>
+                            <Insets left="5.0" top="10.0" />
+                        </VBox.margin></Text>
+                    <HBox spacing="5.0" styleClass="lstHBox" VBox.vgrow="ALWAYS">
+                        <Text fx:id="txtDESAPrc" styleClass="txtMon" text="1500" wrappingWidth="98.0">
+                            <HBox.margin>
+                                <Insets left="15.0" />
+                            </HBox.margin></Text>
+                        <Text fx:id="txtDESAVar" styleClass="txtMon" text="1500" wrappingWidth="90.0">
+                            <HBox.margin>
+                                <Insets left="25.0" />
+                            </HBox.margin></Text>
+                        <VBox.margin>
+                            <Insets left="5.0" top="40.0" />
+                        </VBox.margin>
+                    </HBox>
+                </VBox>
+            </Pane>
+            <Pane fx:id="pnlVANA" prefHeight="100.0" prefWidth="150.0" styleClass="card">
+                <VBox>
+                    <HBox spacing="5.0" styleClass="frsHBox" VBox.vgrow="ALWAYS">
+                        <ImageView fx:id="imgVANA" fitHeight="38.0" fitWidth="35.0">
+                            <HBox.margin>
+                                <Insets left="5.0" top="7.0" />
+                            </HBox.margin></ImageView>
+                        <Text fx:id="txtVANAEmp" styleClass="txtcard" text="Titulo" wrappingWidth="169.0">
+                            <HBox.margin>
+                                <Insets top="15.0" />
+                            </HBox.margin></Text>
+                    </HBox>
+                    <Text fx:id="txtVANANom" styleClass="txtcard" text="Titulo" textAlignment="CENTER" wrappingWidth="239.0">
+                        <VBox.margin>
+                            <Insets left="5.0" top="10.0" />
+                        </VBox.margin></Text>
+                    <HBox spacing="5.0" styleClass="lstHBox" VBox.vgrow="ALWAYS">
+                        <Text fx:id="txtVANAPrc" styleClass="txtMon" text="1500" wrappingWidth="98.0">
+                            <HBox.margin>
+                                <Insets left="15.0" />
+                            </HBox.margin></Text>
+                        <Text fx:id="txtVANAVar" styleClass="txtMon" text="1500" wrappingWidth="90.0">
+                            <HBox.margin>
+                                <Insets left="25.0" />
+                            </HBox.margin></Text>
+                        <VBox.margin>
+                            <Insets left="5.0" top="40.0" />
+                        </VBox.margin>
+                    </HBox>
+                </VBox>
+            </Pane>
+        </HBox>
+        <HBox styleClass="Amplio" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="200.0">
+            <Pane fx:id="pnlLIB" prefHeight="100.0" prefWidth="150.0" styleClass="card">
+                <VBox>
+                    <HBox spacing="5.0" styleClass="frsHBox" VBox.vgrow="ALWAYS">
+                        <ImageView fx:id="imgLIB" fitHeight="38.0" fitWidth="35.0">
+                            <HBox.margin>
+                                <Insets left="5.0" top="7.0" />
+                            </HBox.margin></ImageView>
+                        <Text fx:id="txtLIBEmp" styleClass="txtcard" text="Titulo" wrappingWidth="169.0">
+                            <HBox.margin>
+                                <Insets top="15.0" />
+                            </HBox.margin></Text>
+                    </HBox>
+                    <Text fx:id="txtLIBNom" styleClass="txtcard" text="Titulo" textAlignment="CENTER" wrappingWidth="239.0">
+                        <VBox.margin>
+                            <Insets left="5.0" top="10.0" />
+                        </VBox.margin></Text>
+                    <HBox spacing="5.0" styleClass="lstHBox" VBox.vgrow="ALWAYS">
+                        <Text fx:id="txtLIBPrc" styleClass="txtMon" text="1500" wrappingWidth="98.0">
+                            <HBox.margin>
+                                <Insets left="15.0" />
+                            </HBox.margin></Text>
+                        <Text fx:id="txtLIBVar" styleClass="txtMon" text="1500" wrappingWidth="90.0">
+                            <HBox.margin>
+                                <Insets left="25.0" />
+                            </HBox.margin></Text>
+                        <VBox.margin>
+                            <Insets left="5.0" top="40.0" />
+                        </VBox.margin>
+                    </HBox>
+                </VBox>
+            </Pane>
+            <Pane fx:id="pnlATRY" prefHeight="100.0" prefWidth="150.0" styleClass="card">
+                <VBox>
+                    <HBox spacing="5.0" styleClass="frsHBox" VBox.vgrow="ALWAYS">
+                        <ImageView fx:id="imgATRY" fitHeight="38.0" fitWidth="35.0">
+                            <HBox.margin>
+                                <Insets left="5.0" top="7.0" />
+                            </HBox.margin></ImageView>
+                        <Text fx:id="txtATRYEmp" styleClass="txtcard" text="Titulo" wrappingWidth="169.0">
+                            <HBox.margin>
+                                <Insets top="15.0" />
+                            </HBox.margin></Text>
+                    </HBox>
+                    <Text fx:id="txtATRYNom" styleClass="txtcard" text="Titulo" textAlignment="CENTER" wrappingWidth="239.0">
+                        <VBox.margin>
+                            <Insets left="5.0" top="10.0" />
+                        </VBox.margin></Text>
+                    <HBox spacing="5.0" styleClass="lstHBox" VBox.vgrow="ALWAYS">
+                        <Text fx:id="txtATRYPrc" styleClass="txtMon" text="1500" wrappingWidth="98.0">
+                            <HBox.margin>
+                                <Insets left="15.0" />
+                            </HBox.margin></Text>
+                        <Text fx:id="txtATRYVar" styleClass="txtMon" text="1500" wrappingWidth="90.0">
+                            <HBox.margin>
+                                <Insets left="25.0" />
+                            </HBox.margin></Text>
+                        <VBox.margin>
+                            <Insets left="5.0" top="40.0" />
+                        </VBox.margin>
+                    </HBox>
+                </VBox>
+            </Pane>
+            <Pane fx:id="pnlGGR" prefHeight="100.0" prefWidth="150.0" styleClass="card">
+                <VBox>
+                    <HBox spacing="5.0" styleClass="frsHBox" VBox.vgrow="ALWAYS">
+                        <ImageView fx:id="imgGGR" fitHeight="38.0" fitWidth="35.0">
+                            <HBox.margin>
+                                <Insets left="5.0" top="7.0" />
+                            </HBox.margin></ImageView>
+                        <Text fx:id="txtGGREmp" styleClass="txtcard" text="Titulo" wrappingWidth="169.0">
+                            <HBox.margin>
+                                <Insets top="15.0" />
+                            </HBox.margin></Text>
+                    </HBox>
+                    <Text fx:id="txtGGRNom" styleClass="txtcard" text="Titulo" textAlignment="CENTER" wrappingWidth="239.0">
+                        <VBox.margin>
+                            <Insets left="5.0" top="10.0" />
+                        </VBox.margin></Text>
+                    <HBox spacing="5.0" styleClass="lstHBox" VBox.vgrow="ALWAYS">
+                        <Text fx:id="txtGGRPrc" styleClass="txtMon" text="1500" wrappingWidth="98.0">
+                            <HBox.margin>
+                                <Insets left="15.0" />
+                            </HBox.margin></Text>
+                        <Text fx:id="txtGGRVar" styleClass="txtMon" text="1500" wrappingWidth="90.0">
+                            <HBox.margin>
+                                <Insets left="25.0" />
+                            </HBox.margin></Text>
+                        <VBox.margin>
+                            <Insets left="5.0" top="40.0" />
+                        </VBox.margin>
+                    </HBox>
+                </VBox>
+            </Pane>
+        </HBox>
+    </AnchorPane>
+
+    <AnchorPane styleClass="Amplio" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1200.0">
+        <Text fill="WHITE" styleClass="titleAP" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="0.0">Acciones Ganadoras</Text>
+        <HBox styleClass="Amplio" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+            <Pane fx:id="pnlADZ" prefHeight="100.0" prefWidth="150.0" styleClass="card">
+                <VBox>
+                    <HBox spacing="5.0" styleClass="frsHBox" VBox.vgrow="ALWAYS">
+                        <ImageView fx:id="imgADZ" fitHeight="38.0" fitWidth="35.0">
+                            <HBox.margin>
+                                <Insets left="5.0" top="7.0" />
+                            </HBox.margin></ImageView>
+                        <Text fx:id="txtADZEmp" styleClass="txtcard" text="Titulo" wrappingWidth="169.0">
+                            <HBox.margin>
+                                <Insets top="15.0" />
+                            </HBox.margin></Text>
+                    </HBox>
+                    <Text fx:id="txtADZNom" styleClass="txtcard" text="Titulo" textAlignment="CENTER" wrappingWidth="239.0">
+                        <VBox.margin>
+                            <Insets left="5.0" top="10.0" />
+                        </VBox.margin></Text>
+                    <HBox spacing="5.0" styleClass="lstHBox" VBox.vgrow="ALWAYS">
+                        <Text fx:id="txtADZPrc" styleClass="txtMon" text="1500" wrappingWidth="98.0">
+                            <HBox.margin>
+                                <Insets left="15.0" />
+                            </HBox.margin></Text>
+                        <Text fx:id="txtADZVar" styleClass="txtMon" text="1500" wrappingWidth="90.0">
+                            <HBox.margin>
+                                <Insets left="25.0" />
+                            </HBox.margin></Text>
+                        <VBox.margin>
+                            <Insets left="5.0" top="40.0" />
+                        </VBox.margin>
+                    </HBox>
+                </VBox>
+            </Pane>
+            <Pane fx:id="pnlENRS" prefHeight="100.0" prefWidth="150.0" styleClass="card">
+                <VBox>
+                    <HBox spacing="5.0" styleClass="frsHBox" VBox.vgrow="ALWAYS">
+                        <ImageView fx:id="imgENRS" fitHeight="38.0" fitWidth="35.0">
+                            <HBox.margin>
+                                <Insets left="5.0" top="7.0" />
+                            </HBox.margin></ImageView>
+                        <Text fx:id="txtENRSEmp" styleClass="txtcard" text="Titulo" wrappingWidth="169.0">
+                            <HBox.margin>
+                                <Insets top="15.0" />
+                            </HBox.margin></Text>
+                    </HBox>
+                    <Text fx:id="txtENRSNom" styleClass="txtcard" text="Titulo" textAlignment="CENTER" wrappingWidth="239.0">
+                        <VBox.margin>
+                            <Insets left="5.0" top="10.0" />
+                        </VBox.margin></Text>
+                    <HBox spacing="5.0" styleClass="lstHBox" VBox.vgrow="ALWAYS">
+                        <Text fx:id="txtENRSPrc" styleClass="txtMon" text="1500" wrappingWidth="98.0">
+                            <HBox.margin>
+                                <Insets left="15.0" />
+                            </HBox.margin></Text>
+                        <Text fx:id="txtENRSVar" styleClass="txtMon" text="1500" wrappingWidth="90.0">
+                            <HBox.margin>
+                                <Insets left="25.0" />
+                            </HBox.margin></Text>
+                        <VBox.margin>
+                            <Insets left="5.0" top="40.0" />
+                        </VBox.margin>
+                    </HBox>
+                </VBox>
+            </Pane>
+            <Pane fx:id="pnlRBT" prefHeight="100.0" prefWidth="150.0" styleClass="card">
+                <VBox>
+                    <HBox spacing="5.0" styleClass="frsHBox" VBox.vgrow="ALWAYS">
+                        <ImageView fx:id="imgRBT" fitHeight="38.0" fitWidth="35.0">
+                            <HBox.margin>
+                                <Insets left="5.0" top="7.0" />
+                            </HBox.margin></ImageView>
+                        <Text fx:id="txtRBTEmp" styleClass="txtcard" text="Titulo" wrappingWidth="169.0">
+                            <HBox.margin>
+                                <Insets top="15.0" />
+                            </HBox.margin></Text>
+                    </HBox>
+                    <Text fx:id="txtRBTNom" styleClass="txtcard" text="Titulo" textAlignment="CENTER" wrappingWidth="239.0">
+                        <VBox.margin>
+                            <Insets left="5.0" top="10.0" />
+                        </VBox.margin></Text>
+                    <HBox spacing="5.0" styleClass="lstHBox" VBox.vgrow="ALWAYS">
+                        <Text fx:id="txtRBTPrc" styleClass="txtMon" text="1500" wrappingWidth="98.0">
+                            <HBox.margin>
+                                <Insets left="15.0" />
+                            </HBox.margin></Text>
+                        <Text fx:id="txtRBTVar" styleClass="txtMon" text="1500" wrappingWidth="90.0">
+                            <HBox.margin>
+                                <Insets left="25.0" />
+                            </HBox.margin></Text>
+                        <VBox.margin>
+                            <Insets left="5.0" top="40.0" />
+                        </VBox.margin>
+                    </HBox>
+                </VBox>
+            </Pane>
+        </HBox>
+        <HBox styleClass="Amplio" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="200.0">
+            <Pane fx:id="pnlVYT" prefHeight="100.0" prefWidth="150.0" styleClass="card">
+                <VBox>
+                    <HBox spacing="5.0" styleClass="frsHBox" VBox.vgrow="ALWAYS">
+                        <ImageView fx:id="imgVYT" fitHeight="38.0" fitWidth="35.0">
+                            <HBox.margin>
+                                <Insets left="5.0" top="7.0" />
+                            </HBox.margin></ImageView>
+                        <Text fx:id="txtVYTEmp" styleClass="txtcard" text="Titulo" wrappingWidth="169.0">
+                            <HBox.margin>
+                                <Insets top="15.0" />
+                            </HBox.margin></Text>
+                    </HBox>
+                    <Text fx:id="txtVYTNom" styleClass="txtcard" text="Titulo" textAlignment="CENTER" wrappingWidth="239.0">
+                        <VBox.margin>
+                            <Insets left="5.0" top="10.0" />
+                        </VBox.margin></Text>
+                    <HBox spacing="5.0" styleClass="lstHBox" VBox.vgrow="ALWAYS">
+                        <Text fx:id="txtVYTPrc" styleClass="txtMon" text="1500" wrappingWidth="98.0">
+                            <HBox.margin>
+                                <Insets left="15.0" />
+                            </HBox.margin></Text>
+                        <Text fx:id="txtVYTVar" styleClass="txtMon" text="1500" wrappingWidth="90.0">
+                            <HBox.margin>
+                                <Insets left="25.0" />
+                            </HBox.margin></Text>
+                        <VBox.margin>
+                            <Insets left="5.0" top="40.0" />
+                        </VBox.margin>
+                    </HBox>
+                </VBox>
+            </Pane>
+            <Pane fx:id="pnlSLR" prefHeight="100.0" prefWidth="150.0" styleClass="card">
+                <VBox>
+                    <HBox spacing="5.0" styleClass="frsHBox" VBox.vgrow="ALWAYS">
+                        <ImageView fx:id="imgSLR" fitHeight="38.0" fitWidth="35.0">
+                            <HBox.margin>
+                                <Insets left="5.0" top="7.0" />
+                            </HBox.margin></ImageView>
+                        <Text fx:id="txtSLREmp" styleClass="txtcard" text="Titulo" wrappingWidth="169.0">
+                            <HBox.margin>
+                                <Insets top="15.0" />
+                            </HBox.margin></Text>
+                    </HBox>
+                    <Text fx:id="txtSLRNom" styleClass="txtcard" text="Titulo" textAlignment="CENTER" wrappingWidth="239.0">
+                        <VBox.margin>
+                            <Insets left="5.0" top="10.0" />
+                        </VBox.margin></Text>
+                    <HBox spacing="5.0" styleClass="lstHBox" VBox.vgrow="ALWAYS">
+                        <Text fx:id="txtSLRPrc" styleClass="txtMon" text="1500" wrappingWidth="98.0">
+                            <HBox.margin>
+                                <Insets left="15.0" />
+                            </HBox.margin></Text>
+                        <Text fx:id="txtSLRVar" styleClass="txtMon" text="1500" wrappingWidth="90.0">
+                            <HBox.margin>
+                                <Insets left="25.0" />
+                            </HBox.margin></Text>
+                        <VBox.margin>
+                            <Insets left="5.0" top="40.0" />
+                        </VBox.margin>
+                    </HBox>
+                </VBox>
+            </Pane>
+            <Pane fx:id="pnlCLR" prefHeight="100.0" prefWidth="150.0" styleClass="card" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+                <VBox>
+                    <HBox spacing="5.0" styleClass="frsHBox" VBox.vgrow="ALWAYS">
+                        <ImageView fx:id="imgCLR" fitHeight="38.0" fitWidth="35.0">
+                            <HBox.margin>
+                                <Insets left="5.0" top="7.0" />
+                            </HBox.margin></ImageView>
+                        <Text fx:id="txtCLREmp" styleClass="txtcard" text="Titulo" wrappingWidth="169.0">
+                            <HBox.margin>
+                                <Insets top="15.0" />
+                            </HBox.margin></Text>
+                    </HBox>
+                    <Text fx:id="txtCLRNom" styleClass="txtcard" text="Titulo" textAlignment="CENTER" wrappingWidth="239.0">
+                        <VBox.margin>
+                            <Insets left="5.0" top="10.0" />
+                        </VBox.margin></Text>
+                    <HBox spacing="5.0" styleClass="lstHBox" VBox.vgrow="ALWAYS">
+                        <Text fx:id="txtCLRPrc" styleClass="txtMon" text="1500" wrappingWidth="98.0">
+                            <HBox.margin>
+                                <Insets left="15.0" />
+                            </HBox.margin></Text>
+                        <Text fx:id="txtCLRVar" styleClass="txtMon" text="1500" wrappingWidth="90.0">
+                            <HBox.margin>
+                                <Insets left="25.0" />
+                            </HBox.margin></Text>
+                        <VBox.margin>
+                            <Insets left="5.0" top="40.0" />
+                        </VBox.margin>
+                    </HBox>
+                </VBox>
+            </Pane>
+        </HBox>
+    </AnchorPane>
+   <padding>
+      <Insets bottom="25.0" top="35.0" />
+   </padding>
+
+</AnchorPane>
